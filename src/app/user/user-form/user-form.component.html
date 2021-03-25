@@ -1,0 +1,35 @@
+<form (ngSubmit)="onhandelSubmit()" #userForm="ngForm">
+  <h1>Edit User</h1>
+  <div class="input-group flex-nowrap">
+    <input type="text"
+           class="form-control"
+           placeholder="First Name"
+           aria-label="First Name"
+           name="first_name"
+           [ngModel]="userService.user.first_name"
+           ngModel
+           aria-describedby="addon-wrapping">
+  </div>
+  <div class="input-group mb-3 margin">
+    <input type="text"
+           class="form-control"
+           aria-label="Sizing example input"
+           placeholder="Last Name"
+           name="last_name"
+           [ngModel]="userService.user.last_name"
+           ngModel
+           aria-describedby="inputGroup-sizing-default">
+  </div>
+  <div class="input-group mb-3">
+    <input type="email" 
+           class="form-control"
+           aria-label="Sizing example input"
+           placeholder="Email"
+           [ngModel]="userService.user.email"
+           name="email"
+           ngModel
+           aria-describedby="inputGroup-sizing-default">
+  </div>
+
+  <button type="submit" [mat-dialog-close]="true">Save</button>
+</form>

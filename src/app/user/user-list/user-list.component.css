@@ -1,0 +1,71 @@
+.users-list {
+    width: 100%;
+    padding: 20px;
+}
+
+.users-list .user {
+    width: 100%;
+    height: 230px;
+    border-radius: 20px;
+    margin: 10px 0;
+    box-shadow: 0 1px 5px 0 #ccc;
+    position: relative;
+}
+
+.users-list .user .avatar {
+    display: flex;
+}
+
+.users-list .user .avatar .img {
+    width: 40%;
+    height: 140px;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.users-list .user .avatar .img img {
+    width: 100%;
+    height: 100%;
+}
+
+.users-list .user .avatar .details p {
+    width: 100%;
+    margin: 10px 5px;
+    font-size: 15px;
+}
+
+.users-list .user .avatar .details p span {
+    color: #a7a5a5;
+}
+
+.users-list .user button {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    width: 50px;
+    bottom: 0;
+}
+
+.users-list .user button img {
+    width: 100%;
+}
+
+
+
+.users-list .user span {
+    margin: 0 10px;
+    display: block
+}
+
+.delete {
+    right: 5px;
+}
+
+.edit {
+    width: 38px i !important;
+    left: 5px;
+}
+
+.edit img {
+    width: 70% !important;
+}
